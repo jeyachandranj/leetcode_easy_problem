@@ -1,0 +1,17 @@
+class Solution {
+    public boolean isPalindrome(int x) {
+        int b,s=0;
+       if(x<0)
+            return false;
+        int x1=x;
+        while(x1!=0)
+        {
+            b=x1%10;
+            x1=x1/10;
+            s=(s*10)+b;
+        }
+        System.out.print(s);
+        return x==s;
+    } 
+}
+
